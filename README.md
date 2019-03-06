@@ -4,8 +4,8 @@
 <font style = "font-size: 0.7rem; color: gray;">2019. 03. 06</font>
 <br>
 <br>
-이 프로젝트는 FILE 포인터로 stdin을 가리킨 상태에서 포인터를 이용하여 메모리 주소에 접근해<br>
-입력한 문자열을 디버그 모드에서 확인해 보는 프로젝트입니다.<br>
+<font style = "color: royalblue;">이 프로젝트는 FILE 포인터로 stdin을 가리킨 상태에서 포인터를 이용하여 메모리 주소에 접근해<br>
+입력한 문자열을 디버그 모드에서 확인해 보는 프로젝트입니다.</font><br>
 <br>
 <br>
 작업 환경은 Visual Stdio 2017 이며, 2017버전은 현재(작성일) FILE 포인터의 구조체 맴버를 볼 수 없기에<br>
