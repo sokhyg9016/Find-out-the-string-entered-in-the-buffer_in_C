@@ -1,4 +1,5 @@
 # Find-out-the-string-entered-in-the-buffer_in_C<br>
+<hr>
 <br>
 2019. 03. 06
 <br>
