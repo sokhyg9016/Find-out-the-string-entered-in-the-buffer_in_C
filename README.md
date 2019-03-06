@@ -1,7 +1,7 @@
 # Find-out-the-string-entered-in-the-buffer_in_C<br>
 <hr>
 <br>
-2019. 03. 06
+<font style = "font-size: 0.7rem; color: gray;">2019. 03. 06</font>
 <br>
 <br>
 이 프로젝트는 FILE 포인터로 stdin을 가리킨 상태에서 포인터를 이용하여 메모리 주소에 접근해<br>
