@@ -32,7 +32,7 @@ int main()
 
 	//INPUT NULL
 	//fstr[GetSize() + 1] = '\0';
-	*(*(ffptr) + GetSize() + 1) = '\0';
+	*(*(ffptr) + GetSize()) = '\0';
 
 	//*Caution! 
 	//GetSize()함수에서 사용하는 getchar()함수는 버퍼에서 한 글자씩 문자를 가져오는 것이기 때문에
