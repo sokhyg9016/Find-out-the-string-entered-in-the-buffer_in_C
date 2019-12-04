@@ -56,11 +56,11 @@ base포인터는 현재 입력된 값이 저장된 주소를 저장하고 있으
 즉, *base*와 같은 역할을 하는 `_Placeholder`의 타입은 ```void* ```이라는 것이다.
 아마 필자는 작성 당시 개념에 대해 햇갈렸던 것 같다. 이때 메모리 구조로 살펴보자면,
 
-|**variable name**|**variable address**|**variable content**|**>**|**variable address**|**variable content**|
-| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-|```&fp->_Placeholder```|0x0FE74A28|f1 1f 8c 00|>|f1 1f 8c 00|65 6c 6c 6f 20 57 6f 72 6c 64 21 0a 0a [ = ello World!..]|
-|```&fp->_Placeholder+1```|0x0FE74A2C|f0 1f 8c 00|>|f0 1f 8c 00|48 65 6c 6c 6f 20 57 6f 72 6c 64 21 0a 0a [ = Hello World!..]|
-|...|...|...|>|...|...|
+|**variable name**|**variable address**|**variable content**|**>**|**variable address**|**variable content**|**Translation**|
+| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|```&fp->_Placeholder```|0x0FE74A28|f1 1f 8c 00|>|f1 1f 8c 00|65 6c 6c 6f 20 57 6f 72 6c 64 21 0a 0a|ello World!..|
+|```&fp->_Placeholder+1```|0x0FE74A2C|f0 1f 8c 00|>|f0 1f 8c 00|48 65 6c 6c 6f 20 57 6f 72 6c 64 21 0a 0a|Hello World!..|
+|...|...|...|>|...|...|...|
 
 따라서 **f0 1f 8c 00** 즉, ```008c1ff0```이 바로 우리가 입력한 문자열이 저장된 곳의 시작주소라는 것이다.
 이때 ```&fp->_Placeholder + 1```이 저장하고 있는 ```008c1ff0```라는 값의 타입은 ```void*```이므로,  이를 ```char*```으로 바꾸어 사용할 수 있는 것이다.
